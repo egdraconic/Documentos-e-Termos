@@ -395,6 +395,15 @@ margin: 0
 }
 }
 
+@media screen and (max-width:612px) {
+  nav {
+    height: 40px;
+  }
+  .nav-home li {
+    margin: 0 32px;
+  }
+}
+
   @media screen and (max-width:479px) {
   .topicos .conteiner ul li button {
       font-size: 4vh;
@@ -410,7 +419,6 @@ margin: 0
   }
   nav {
     justify-content: inherit;
-    height: 40px;
   }
   .nav-home li {
     margin: 0 20px;
