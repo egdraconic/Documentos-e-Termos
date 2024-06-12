@@ -157,11 +157,6 @@ main {
   color: #2A516E;
 }
 
-@media (max-width: 800px) {
-  .nav-home
-  {width: 0vw;}
-} 
-
 
 /* ate aqui em cima é o cabeçalho */
 
@@ -169,6 +164,7 @@ header{
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 2;
 }
 
 .titulo {
@@ -329,12 +325,8 @@ footer {
     font-size: 6vw;
   }
 
-  nav {
-    justify-content: inherit;
-  }
-
   .nav-home li {
-    margin: 40px;
+    margin: 0 40px;
   }
 
   .nav-home ul {
@@ -404,28 +396,28 @@ margin: 0
 }
 
   @media screen and (max-width:479px) {
-    .topicos .conteiner ul li button {
+  .topicos .conteiner ul li button {
       font-size: 4vh;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
   }
-  
-    ul li img {
-      width: 30px;
-    }
-
-
-    .imagens-T, .imagens-E, .imagem-F, .imagens-G, .imagens-C, .imagens-D {
+  ul li img {
+    width: 30px;
+  }
+  .imagens-T, .imagens-E, .imagem-F, .imagens-G, .imagens-C, .imagens-D {
       width: 100vw
   }
+  nav {
+    justify-content: inherit;
+    height: 40px;
+  }
+  .nav-home li {
+    margin: 0 20px;
   }
 
-  @media (max-width:400px) {
-        .nav-home li {
-        margin: 20px;
-    }
   }
+
 
 
 @keyframes subir {
